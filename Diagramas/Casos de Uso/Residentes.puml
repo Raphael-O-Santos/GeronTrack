@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Admin" as admin
+rectangle Residentes {
+    (Cadastrar\nresidente) as insert_resid
+    (Atualizar\nresidente) as update_resid
+    (Excluir\nresidente) as delete_resid
+    (Visualizar\nresidente) as select_resid
+    (Arquivar\nresidente) as archive_resid
+}
+admin -- insert_resid
+admin -- update_resid
+admin -- delete_resid
+admin -- select_resid
+"Colaborador" -- select_resid
+delete_resid <.. archive_resid : <<estender>>
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Usuário" as user
+rectangle Autenticação {
+    (Primeiro\nacesso) as first
+    (Novo\ncadastro) as new
+    (Informar "E-mail\njá cadastrado") as verify_error_cad
+    (Verificar\ne-mail) as verify_cad
+    (Login) as login
+    (Recuperar\nsenha) as recovery
+    (Enviar senha\nprovisória para\no e-mail do usuário) as sent_pw
+    (Informar "Usuário\nnão cadastrado") as verify_error_user
+    (Verificar\nusuário) as verify_user
+}
+"Admin" --|> user
+"Colaborador" --|> user
+user -- first
+first ..> verify_cad : <<incluir>>
+first <.. verify_error_cad : <<estender>>
+first ..> new : <<incluir>>
+user -- login
+login ..> verify_user : <<incluir>>
+login <.. verify_error_user : <<estender>>
+login <.. recovery : <<estender>>
+sent_pw ..> recovery : <<incluir>>
+@enduml

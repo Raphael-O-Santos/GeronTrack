@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Admin" as admin
+rectangle Usuários {
+    (Cadastrar\nusuário) as insert_user
+    (Enviar senha\nde 1° acesso) as mail_pw
+    (Editar\nusuário) as update_user
+    (Atualizar\ncargo) as update_user_pos
+    (Atualizar\nnome) as update_user_name
+    (Excluir\nusuário) as delete_user
+}
+admin -- insert_user
+insert_user <.. mail_pw : <<estender>>
+admin -- update_user
+update_user ..> update_user_name : <<incluir>>
+update_user ..> update_user_pos : <<incluir>>
+admin -- delete_user
+@enduml

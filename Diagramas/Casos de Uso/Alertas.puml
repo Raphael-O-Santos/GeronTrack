@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Admin" as admin
+rectangle Alertas {
+    (Visualizar\nalertas) as select_alert
+    (Ignorar\nalerta) as ignore_alert
+    (Arquivar\nalerta) as archive_alert
+    (Encaminhar\nalerta) as mail_alert
+    (Copiar\nconteúdo\ndo alerta) as copy_alert
+}
+rectangle "App de e-mail\npadrão do usuário" as external_sys
+note right of copy_alert
+    O conteúdo do alerta
+    é copiado para o
+    corpo do e-mail
+end note
+admin -- select_alert
+select_alert ..> mail_alert : <<incluir>>
+mail_alert <.. copy_alert : <<estender>>
+copy_alert -- external_sys
+select_alert ..> ignore_alert : <<incluir>>
+ignore_alert <.. archive_alert : <<estender>>
+@enduml

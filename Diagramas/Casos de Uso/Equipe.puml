@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Colaborador" as colab
+"Admin" as admin
+rectangle "Equipe Multiprofissional" {
+    (Inserir\nregistro) as insert_reg
+    (Análise de\nindicadores) as indicators
+    note top of indicators
+        Análise automática
+        com adição paralela
+        em relatórios e alertas
+    end note
+    (Criação\nde alertas) as alerts
+    (Composição\nde relatórios) as reports
+    (Arquivar\nregistro) as archive_reg
+    note right of archive_reg
+        Registros de residentes inativos
+        (arquivados/excluídos) são
+        arquivados automaticamente
+    end note
+    (Visualizar\nregistro\nprofissional) as select_reg
+    (Solicitar\natualização\nde registro) as update_reg
+    note right of select_reg
+        Ambos os usuários podem visualizar
+        os registros de todos os profissionais
+    end note
+    (Analisar\nsolicitação) as analize_req
+}
+colab -- insert_reg
+insert_reg ..> indicators : <<incluir>>
+indicators ..> reports : <<incluir>>
+indicators <.. alerts : <<estender>>
+colab -- update_reg
+update_reg <.. analize_req : <<estender>>
+colab -- select_reg
+admin -- select_reg
+admin -- analize_req
+admin -- archive_reg
+@enduml

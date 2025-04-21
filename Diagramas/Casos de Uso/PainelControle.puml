@@ -1,0 +1,54 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+"Admin" as admin
+"Colaborador" as colab
+rectangle "Painel de Controle (lateral)" {
+    (Visualizar\nrelatórios) as show_reports
+    note top of show_reports
+        Apresenta os relatórios
+        parciais e finalizados
+    end note
+    rectangle {
+        note as nota
+            Informações que irão compor
+            o cabeçalho dos relatórios
+        end note
+        (Editar endereço\nda instituição) as address_ilpi
+        (Editar nome\nda instituição) as name_ilpi
+        (Editar telefones\nda instituição) as phone_ilpi
+        (Editar e-mail\nda instituição) as email_ilpi
+    }
+    (Download\nde relatório) as download_report
+    (Trocar\nsenha) as change_pw
+    (Enviar senha\nprovisória para\no e-mail do usuário) as sent_pw
+    (Visualizar\ninsígnia) as insignia
+        note right of insignia
+            Símbolo da profissão
+            do usuário atribuído
+            automaticamente
+        end note
+    (Resumo de\nresidentes) as grid
+        note right of grid
+            Quantidade de residentes
+            por grau de dependência
+            e somatório de ativos
+        end note
+    (Enviar\nfeedback) as feedback
+}
+admin -- insignia
+admin -- change_pw
+admin -- show_reports
+admin -- grid
+admin -- feedback
+colab .. insignia
+colab .. change_pw
+colab .. grid
+colab .. feedback
+change_pw <.. sent_pw : <<estender>>
+show_reports ..> name_ilpi : <<incluir>>
+show_reports ..> address_ilpi : <<incluir>>
+show_reports ..> email_ilpi : <<incluir>>
+show_reports ..> phone_ilpi : <<incluir>>
+show_reports ..> download_report : <<incluir>>
+@enduml
