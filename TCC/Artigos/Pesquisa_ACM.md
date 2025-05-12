@@ -6,10 +6,11 @@
 ## Filtros aplicados:
 | BASE | STRING | PERÍODO | PUBLICAÇÕES | TIPO DE CONTEÚDO | ACESSO |
 | ---- | ------ | ------- | ----------- | ---------------- | ------ |
-| The ACM Full-Text collection | Qualquer lugar | 09/2005^*^ - 05/2025^**^ | Journals | Research Article | - FREE<br>- OPEN ACCESS<br>- PUBLIC ACCESS |
+| The ACM Full-Text collection | Qualquer lugar | 09/2005<sup>1</sup> - 05/2025<sup>2</sup> | Journals | Research Article | - FREE<br>- OPEN ACCESS<br>- PUBLIC ACCESS |
 
-^*^ Mês de publicação da 1^a^ Resolução de Diretoria Colegiada (RDC) que regulamentava o serviço das Instituições de Longa Permanência para Idosos (ILPI) no Brasil, a [RDC nº 283/2005](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/res0283_26_09_2005.html), que mais tarde fora revogada pela [RDC nº 502/2021](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0502_27_05_2021.pdf).
-^**^ Mês efetivo da pesquisa. Data exata: 09/05/2025.
+<sup>1</sup> Mês de publicação da 1ª Resolução de Diretoria Colegiada (RDC) que regulamentava o serviço das Instituições de Longa Permanência para Idosos (ILPI) no Brasil, a [RDC nº 283/2005](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/res0283_26_09_2005.html), que mais tarde fora revogada pela [RDC nº 502/2021](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0502_27_05_2021.pdf).
+
+<sup>2</sup> Mês efetivo da pesquisa. Data exata: 09/05/2025.
 
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO |

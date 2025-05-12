@@ -6,12 +6,15 @@
 ## Filtros aplicados:
 | STRING | PERÍODO | DISPONIBILIDADE | TIPOS DE ARTIGO | IDIOMA | OUTROS |
 | ------ | ------- | --------------- | --------------- | ------ | ------ |
-| Title/Abstract | 26/09/2005^*^ - 09/05/2025^**^ | - Abstract<br>- Free full text | - Evaluation Study<br>- Research Support, Non-U.S. Gov't<br>- Review<br>- Scoping Review<br>- Systematic Review<br>- Technical Report<br>- Validation Study^***^ | - Português<br>- Inglês | Exclude preprints^****^
+| Title/Abstract | 26/09/2005<sup>1</sup> - 09/05/2025<sup>2</sup> | - Abstract<br>- Free full text | - Evaluation Study<br>- Research Support, Non-U.S. Gov't<br>- Review<br>- Scoping Review<br>- Systematic Review<br>- Technical Report<br>- Validation Study<sup>3</sup> | - Português<br>- Inglês | Exclude preprints<sup>4</sup>
 
-^*^ Data de publicação da 1^a^ Resolução de Diretoria Colegiada (RDC) que regulamentava o serviço das Instituições de Longa Permanência para Idosos (ILPI) no Brasil, a [RDC nº 283/2005](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/res0283_26_09_2005.html), que mais tarde fora revogada pela [RDC nº 502/2021](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0502_27_05_2021.pdf).
-^**^ Data efetiva da pesquisa.
-^***^ Foram selecionados tipos de artigo que priorizam estudos relevantes para a avaliação e fundamentação do uso de software em Instituições de Longa Permanência para Idosos (ILPIs). Research Support (especialmente Non-U.S. Gov't) indica pesquisas financiadas, geralmente originais. Evaluation Study foi escolhido por contemplar análises de eficácia de tecnologias. As categorias Review, Systematic Review e Scoping Review contribuem para contextualizar o tema com base em literatura consolidada ou emergente. Technical Report e Validation Study foram incluídos por oferecerem descrições técnicas e validações de sistemas, condizentes com o escopo da pesquisa.
-^****^ Exclui artigos que ainda não foram revisados por pares (pré-publicações).
+<sup>1</sup> Data de publicação da 1ª Resolução de Diretoria Colegiada (RDC) que regulamentava o serviço das Instituições de Longa Permanência para Idosos (ILPI) no Brasil, a [RDC nº 283/2005](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/res0283_26_09_2005.html), que mais tarde fora revogada pela [RDC nº 502/2021](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0502_27_05_2021.pdf).
+
+<sup>2</sup> Data efetiva da pesquisa.
+
+<sup>3</sup> Foram selecionados tipos de artigo que priorizam estudos relevantes para a avaliação e fundamentação do uso de software em Instituições de Longa Permanência para Idosos (ILPIs). Research Support (especialmente Non-U.S. Gov't) indica pesquisas financiadas, geralmente originais. Evaluation Study foi escolhido por contemplar análises de eficácia de tecnologias. As categorias Review, Systematic Review e Scoping Review contribuem para contextualizar o tema com base em literatura consolidada ou emergente. Technical Report e Validation Study foram incluídos por oferecerem descrições técnicas e validações de sistemas, condizentes com o escopo da pesquisa.
+
+<sup>4</sup> Exclui artigos que ainda não foram revisados por pares (pré-publicações).
 
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO |
