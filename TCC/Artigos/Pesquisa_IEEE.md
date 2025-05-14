@@ -6,11 +6,7 @@
 ## Filtros aplicados:
 | STRING | PERÍODO | PUBLICAÇÕES | TÓPICOS | ACESSO |
 | ------ | ------- | ----------- | ------- | ------ |
-| Qualquer lugar | 2005<sup>1</sup> - 2025<sup>2</sup> | Journals | - Aged Care<br>- Caregivers | Open Access Only |
-
-<sup>1</sup> Ano de publicação da 1ª Resolução de Diretoria Colegiada (RDC) que regulamentava o serviço das Instituições de Longa Permanência para Idosos (ILPI) no Brasil, a [RDC nº 283/2005](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2005/res0283_26_09_2005.html), que mais tarde fora revogada pela [RDC nº 502/2021](https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0502_27_05_2021.pdf).
-
-<sup>2</sup> Ano efetivo da pesquisa. Data exata: 09/05/2025.
+| Qualquer lugar | 2015 - 2024 | Journals | Aged Care,<br>Caregivers | Open Access Only |
 
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO |
@@ -26,4 +22,3 @@
 | 9 | 2022 | Aşuroğlu, Tunç | [Complex Human Activity Recognition Using a Local Weighted Approach](https://ieeexplore.ieee.org/document/9899447) |
 | 10 | 2024 | Cristina, Stefania;<br>Despotovic, Vladimir;<br>Pérez-Rodríguez, Rodrigo;<br>Aleksic, Slavisa | [Audio- and Video-Based Human Activity Recognition Systems in Healthcare](https://ieeexplore.ieee.org/document/10388318) |
 | 11 | 2024 | Caballero-Torres, Pablo;<br>Cano-Crespo, Manuel;<br>Ortiz, Guadalupe;<br>Medina-Bulo, Inmaculada | [AALFlow: A Model-Driven Approach for the Integration of Internet of Things Heterogeneous Solutions for Ambient Assisted Living](https://ieeexplore.ieee.org/document/10606451) |
-| 12 | 2025 | Vizitiu, Cristian;<br>Dominey, Kevin;<br>Nistorescu, Alexandru;<br>Dinculescu, Adrian;<br>Marin, Mihaela | [mHealth Case Study Presenting Design SynMeth, a Rapid Prototyping MBSE Methodology, by Advancing Specific OPM-to-SysML Mapping](https://ieeexplore.ieee.org/document/10937483) |
