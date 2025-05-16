@@ -1,24 +1,18 @@
 # IEEE Xplore
 
 ## String de busca:
-> (("long-term care" OR "long-term care facilities" OR "assisted living" OR "nursing homes" OR "residential care" OR "ambient assisted living") AND ("product" OR "application" OR "software" OR "system" OR "android" OR "app" OR "mobile"))
+> ("long-term residential care" OR "long-term care" OR "nursing home*") AND (software OR develop*)
 
 ## Filtros aplicados:
 | STRING | PERÍODO | PUBLICAÇÕES | TÓPICOS | ACESSO |
 | ------ | ------- | ----------- | ------- | ------ |
-| Qualquer lugar | 2015 - 2024 | Journals | Aged Care,<br>Caregivers | Open Access Only |
+| Abstract | 2015 - 2024 | Journals | Long-term Care,<br>Nursing Home | Open Access Only |
 
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO |
 | -- | --- | ------- | ------ |
-| 1 | 2017 | Lee, Yeongju;<br>Song, Minseok | [Using a Smartwatch to Detect Stereotyped Movements in Children With Developmental Disabilities](https://ieeexplore.ieee.org/document/7888986) |
-| 2 | 2017 | Davis, Kadian;<br>B. Owusu, Evans;<br>Marcenaro, Lucio;<br>Feijs, Loe;<br>Regazzoni, Carlo;<br>Hu, Jun | [Effects of Ambient Lighting Displays on Peripheral Activity Awareness](https://ieeexplore.ieee.org/document/7927391) |
-| 3 | 2018 | Kristiansen, Stein;<br>P. Plagemann, Thomas;<br>Goebel, Vera | [An Activity Rule Based Approach to Simulate ADL Sequences](https://ieeexplore.ieee.org/document/8294191) |
-| 4 | 2018 | De-La-Hoz-Franco, Emiro;<br>Ariza-Colpas, Paola;<br>Medina Quero, Javier;<br>Espinilla, Macarena | [Sensor-Based Datasets for Human Activity Recognition – A Systematic Review of Literature](https://ieeexplore.ieee.org/document/8478653) |
-| 5 | 2019 | Y. E. Simik, Mohamed;<br>Chi, Feng;<br>Li Wei, Chen | [Design and Implementation of a Bluetooth-Based MCU and GSM for Wetness Detection](https://ieeexplore.ieee.org/document/8639072) |
-| 6 | 2019 | Palipana, Sameera;<br>Sigg, Stephan | [Extracting Human Context Through Receiver-End Beamforming](https://ieeexplore.ieee.org/document/8856202) |
-| 7 | 2020 | Chou, Hsien-Ming | [A Collaborative Framework With Artificial Intelligence for Long-Term Care](https://ieeexplore.ieee.org/document/9018259) |
-| 8 | 2021 | Rodrigues, Nuno;<br>Pereira, António | [User-Centered Rating of Well-Being in Older Adults](https://ieeexplore.ieee.org/document/9452070) |
-| 9 | 2022 | Aşuroğlu, Tunç | [Complex Human Activity Recognition Using a Local Weighted Approach](https://ieeexplore.ieee.org/document/9899447) |
-| 10 | 2024 | Cristina, Stefania;<br>Despotovic, Vladimir;<br>Pérez-Rodríguez, Rodrigo;<br>Aleksic, Slavisa | [Audio- and Video-Based Human Activity Recognition Systems in Healthcare](https://ieeexplore.ieee.org/document/10388318) |
-| 11 | 2024 | Caballero-Torres, Pablo;<br>Cano-Crespo, Manuel;<br>Ortiz, Guadalupe;<br>Medina-Bulo, Inmaculada | [AALFlow: A Model-Driven Approach for the Integration of Internet of Things Heterogeneous Solutions for Ambient Assisted Living](https://ieeexplore.ieee.org/document/10606451) |
+| 1 | 2021 | Karaçuha, Ertuğrul;<br>Ergün, Esra;<br>Özge Önal Tuğrul, Nısa;<br>Karaçuha, Kamıl;<br>Tabatadze, Vasil | [Analyzing Response Efficiency to COVID-19 and Underlying Factors of the Outbreak With Deep Assessment Methodology and Fractional Calculus](https://ieeexplore.ieee.org/document/9623535) |
+| 2 | 2022 | Son, Chang-Sik;<br>Kang, Won-Seok;<br>Lee, Jong-Ha;<br>Ja Moon, Kyoung | [Machine Learning to Identify Psychomotor Behaviors of Delirium for Patients in Long-Term Care Facility](https://ieeexplore.ieee.org/document/9556566) |
+| 3 | 2022 | S. Khan, Shehroz;<br>K. Mishra, Pratik;<br>Javed, Nizwa;<br>Ye, Bing;<br>Newman, Kristine;<br>Mihailidis, Alex | [Unsupervised Deep Learning to Detect Agitation From Videos in People With Dementia](https://ieeexplore.ieee.org/document/9684388) |
+| 4 | 2022 | Almutairi, Mubarak;<br>A. Gabralla, Lubna;<br>Abubakar, Saidu;<br>Chiroma, Haruna | [Detecting Elderly Behaviors Based on Deep Learning for Healthcare: Recent Advances, Methods, Real-World Applications and Challenges](https://ieeexplore.ieee.org/document/9808115) |
+| 5 | 2022 | Duque Domingo, Jaime;<br>Gómez-García-Bermejo, Jaime;<br>Zalama, Eduardo | [Improving Human Activity Recognition Integrating LSTM With Different Data Sources: Features, Object Detection and Skeleton Tracking](https://ieeexplore.ieee.org/document/9807301) |
