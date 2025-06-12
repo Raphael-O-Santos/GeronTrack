@@ -9,9 +9,9 @@
 | The ACM Full-Text collection | Abstract | 01/2015 - 12/2024 | Journals | Research Article | OPEN ACCESS |
 
 ## Critérios de inclusão (CI):
-* CI1 - O artigo analisa o uso de tecnologias de informação e comunicação **(TICs) não baseados em inteligência artificial (IA)**?
+* CI1 - O artigo analisa o uso de tecnologias de informação e comunicação **(TICs)**?
 * CI2 - O artigo cita TICs **em estudo ou utilização** nas Instituições de Longa Permanência para Idosos (**ILPI**)?
-* CI3 - As TICs citadas no artigo têm foco na parte de **software**?
+* CI3 - As TICs citadas no artigo têm foco em **software**?
 * CI4 - As TICs citadas no artigo favorecem a **otimização de processos de trabalho** ou **cuidados em saúde**?
 
 ## Critérios de exclusão (CE):

@@ -1,0 +1,93 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: radial-gradient(#00b4d8, #03045e);
+}
+
+.page h1,
+p {
+  margin: 0;
+}
+
+.page h1 {
+  color: #00b4d8;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.page form {
+  display: grid;
+  grid-template-areas:
+    "email email email"
+    "inputEmail inputEmail inputEmail"
+    "senha senha senha"
+    "inputSenha inputSenha visibility";
+  gap: 0.5em;
+  align-items: center;
+}
+
+.email {
+  grid-area: email;
+  font-weight: bold;
+}
+
+.page input[name="email"] {
+  grid-area: inputEmail;
+  width: 14em;
+  font-size: 1em;
+  padding: 4px;
+  border-radius: 0.3em;
+}
+
+.senha {
+  grid-area: senha;
+  font-weight: bold;
+}
+
+.page input[name="senha"] {
+  grid-area: inputSenha;
+  width: 14em;
+  font-size: 1em;
+  padding: 4px;
+  border-radius: 0.3em;
+}
+
+.visibility {
+  display: contents;
+  grid-area: visibility;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+  padding: 1.2em;
+  box-shadow: 0.3em 0.5em 1em #000;
+  border-radius: 1em;
+  background-color: #fff;
+}
+
+.lembrar {
+  align-self: start;
+  margin-bottom: -0.5em;
+}
+
+.ou {
+  display: flex;
+  width: 100%;
+  margin-top: 0.3em;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.ou span {
+  flex: 1;
+  height: 1px;
+  background-color: #000;
+}
