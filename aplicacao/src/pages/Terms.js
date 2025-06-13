@@ -8,6 +8,7 @@ import { useState } from "react";
 
 const Terms = () => {
   const [genero, setGenero] = useState("m");
+  const [profissao, setProfissao] = useState(null);
 
   return (
     <div className={styles.page}>
@@ -88,35 +89,48 @@ const Terms = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.pessoa}>
-          <form>
-            <label htmlFor="nome">Nome:</label>
-            <input
-              type="text"
-              name="nome"
-              placeholder="Informe seu nome completo"
-            />
+        <form>
+          <div className={styles.identificacao}>
+            <h3>Identificação:</h3>
             <div style={{ display: "flex" }}>
-              <p>Gênero:</p>
-              <label htmlFor="masculino">
-                <input
-                  type="radio"
-                  name="opcao"
-                  value={genero}
-                  onClick={() => setGenero("m")}
-                />
-                M
+              <label
+                htmlFor="nome"
+                style={{ fontWeight: "bold", marginRight: "0.2em" }}
+              >
+                Nome:
               </label>
-              <label htmlFor="feminino">
-                <input
-                  type="radio"
-                  name="opcao"
-                  value={genero}
-                  onClick={() => setGenero("f")}
-                />
-                F
-              </label>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Informe seu nome completo"
+              />
+              <div style={{ display: "flex", marginLeft: "1em" }}>
+                <label htmlFor="masculino">
+                  <span style={{ fontWeight: "bold" }}>Gênero:</span>
+                  <input
+                    type="radio"
+                    name="opcao"
+                    value={genero}
+                    onClick={() => setGenero("m")}
+                    defaultChecked
+                  />
+                  M
+                </label>
+                <label htmlFor="feminino">
+                  <input
+                    type="radio"
+                    name="opcao"
+                    value={genero}
+                    onClick={() => setGenero("f")}
+                  />
+                  F
+                </label>
+              </div>
             </div>
+            <label htmlFor="email" style={{ fontWeight: "bold" }}>
+              E-Mail:
+            </label>
+            <input type="email" name="email" placeholder="Informe seu e-mail" />
             <span>Função:</span>
             <select name="funcao">
               <option value="none">-- ESCOLHA --</option>
@@ -126,80 +140,154 @@ const Terms = () => {
                 Responsável Técnic{genero === "m" ? "o" : "a"} (RT)
               </option>
             </select>
-            <span>Profissão:</span>
-            <select name="profissao">
-              <option value="none">-- ESCOLHA --</option>
-              <option value="admin">
-                Administrador{genero === "m" ? "" : "a"}
-              </option>
-              <option value="adv">Advogad{genero === "m" ? "o" : "a"}</option>
-              <option value="agro">Agrônom{genero === "m" ? "o" : "a"}</option>
-              <option value="arq">
-                Arquitet{genero === "m" ? "o" : "a"} e Urbanista
-              </option>
-              <option value="assist_social">Assistente Social</option>
-              <option value="biblio">
-                Bibliotecári{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="bio">Biólog{genero === "m" ? "o" : "a"}</option>
-              <option value="biom">Biomédic{genero === "m" ? "o" : "a"}</option>
-              <option value="contador">
-                Contador{genero === "m" ? "" : "a"}
-              </option>
-              <option value="corretor">
-                Corretor{genero === "m" ? "" : "a"} de Imóveis
-              </option>
-              <option value="dent">Dentista</option>
-              <option value="econ">Economista</option>
-              <option value="edfis">
-                Educador{genero === "m" ? "" : "a"} Físic
-                {genero === "m" ? "o" : "a"}
-              </option>
-              <option value="enf">Enfermeir{genero === "m" ? "o" : "a"}</option>
-              <option value="eng">Engenheir{genero === "m" ? "o" : "a"}</option>
-              <option value="estat">
-                Estatístic{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="farm">
-                Farmacêutic{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="fisio">Fisioterapeuta</option>
-              <option value="fono">
-                Fonoaudiólog{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="geo">Geógraf{genero === "m" ? "o" : "a"}</option>
-              <option value="geologo">
-                Geólog{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="med">Médic{genero === "m" ? "o" : "a"}</option>
-              <option value="vet">
-                Médic{genero === "m" ? "o" : "a"} Veterinári
-                {genero === "m" ? "o" : "a"}
-              </option>
-              <option value="meteorol">Meteorologista</option>
-              <option value="museo">
-                Museólog{genero === "m" ? "o" : "a"}
-              </option>
-              <option value="musico">Músic{genero === "m" ? "o" : "a"}</option>
-              <option value="nutri">Nutricionista</option>
-              <option value="psi">Psicólog{genero === "m" ? "o" : "a"}</option>
-              <option value="quim">Químic{genero === "m" ? "o" : "a"}</option>
-              <option value="rel_pub">Relações Públicas</option>
-              <option value="rep_comercial">Representante Comercial</option>
-              <option value="rad">
-                Tecnólog{genero === "m" ? "o" : "a"} em Radiologia
-              </option>
-              <option value="terap_ocup">Terapeuta Ocupacional</option>
-              <option value="outra">OUTRA</option>
-            </select>
-            <input
-              type="text"
-              name="profissao"
-              placeholder="Informe sua profissão"
-              // hidden={}
-            />
-          </form>
-        </div>
+          </div>
+          <span>Profissão:</span>
+          <select
+            name="profissao"
+            onChange={(e) => setProfissao(e.target.value)}
+          >
+            <option value="none">-- ESCOLHA --</option>
+            <option value="admin">
+              Administrador{genero === "m" ? "" : "a"}
+            </option>
+            <option value="adv">Advogad{genero === "m" ? "o" : "a"}</option>
+            <option value="agro">Agrônom{genero === "m" ? "o" : "a"}</option>
+            <option value="arq">
+              Arquitet{genero === "m" ? "o" : "a"} e Urbanista
+            </option>
+            <option value="assist_social">Assistente Social</option>
+            <option value="biblio">
+              Bibliotecári{genero === "m" ? "o" : "a"}
+            </option>
+            <option value="bio">Biólog{genero === "m" ? "o" : "a"}</option>
+            <option value="biom">Biomédic{genero === "m" ? "o" : "a"}</option>
+            <option value="contador">
+              Contador{genero === "m" ? "" : "a"}
+            </option>
+            <option value="corretor">
+              Corretor{genero === "m" ? "" : "a"} de Imóveis
+            </option>
+            <option value="dent">Dentista</option>
+            <option value="econ">Economista</option>
+            <option value="edfis">
+              Educador{genero === "m" ? "" : "a"} Físic
+              {genero === "m" ? "o" : "a"}
+            </option>
+            <option value="enf">Enfermeir{genero === "m" ? "o" : "a"}</option>
+            <option value="eng">Engenheir{genero === "m" ? "o" : "a"}</option>
+            <option value="estat">
+              Estatístic{genero === "m" ? "o" : "a"}
+            </option>
+            <option value="farm">
+              Farmacêutic{genero === "m" ? "o" : "a"}
+            </option>
+            <option value="fisio">Fisioterapeuta</option>
+            <option value="fono">
+              Fonoaudiólog{genero === "m" ? "o" : "a"}
+            </option>
+            <option value="geo">Geógraf{genero === "m" ? "o" : "a"}</option>
+            <option value="geologo">Geólog{genero === "m" ? "o" : "a"}</option>
+            <option value="med">Médic{genero === "m" ? "o" : "a"}</option>
+            <option value="vet">
+              Médic{genero === "m" ? "o" : "a"} Veterinári
+              {genero === "m" ? "o" : "a"}
+            </option>
+            <option value="meteorol">Meteorologista</option>
+            <option value="museo">Museólog{genero === "m" ? "o" : "a"}</option>
+            <option value="musico">Músic{genero === "m" ? "o" : "a"}</option>
+            <option value="nutri">Nutricionista</option>
+            <option value="psi">Psicólog{genero === "m" ? "o" : "a"}</option>
+            <option value="quim">Químic{genero === "m" ? "o" : "a"}</option>
+            <option value="rel_pub">Relações Públicas</option>
+            <option value="rep_comercial">Representante Comercial</option>
+            <option value="rad">
+              Tecnólog{genero === "m" ? "o" : "a"} em Radiologia
+            </option>
+            <option value="terap_ocup">Terapeuta Ocupacional</option>
+            <option value="outra">OUTRA</option>
+          </select>
+          {profissao === "outra" ? (
+            <input type="text" placeholder="Informe sua profissão" />
+          ) : null}
+          {!["outra", "none", null].includes(profissao) ? (
+            <div>
+              <label htmlFor="conselho">Conselho Regional:</label>
+              <input
+                type="text"
+                name="conselho"
+                value={
+                  profissao === "admin"
+                    ? "CRA"
+                    : profissao === "adv"
+                    ? "OAB"
+                    : profissao === "agro"
+                    ? "CREA"
+                    : profissao === "arq"
+                    ? "CAU"
+                    : profissao === "assist_social"
+                    ? "CRESS"
+                    : profissao === "biblio"
+                    ? "CRB"
+                    : profissao === "bio"
+                    ? "CRBio"
+                    : profissao === "biom"
+                    ? "CRBM"
+                    : profissao === "contador"
+                    ? "CRC"
+                    : profissao === "corretor"
+                    ? "CRECI"
+                    : profissao === "dent"
+                    ? "CRO"
+                    : profissao === "econ"
+                    ? "CORECON"
+                    : profissao === "edfis"
+                    ? "CREF"
+                    : profissao === "enf"
+                    ? "COREN"
+                    : profissao === "eng"
+                    ? "CREA"
+                    : profissao === "estat"
+                    ? "CONRE"
+                    : profissao === "farm"
+                    ? "CRF"
+                    : profissao === "fisio"
+                    ? "CREFITO"
+                    : profissao === "fono"
+                    ? "CREFONO"
+                    : profissao === "geo"
+                    ? "CREA"
+                    : profissao === "geologo"
+                    ? "CREA"
+                    : profissao === "med"
+                    ? "CRM"
+                    : profissao === "vet"
+                    ? "CRMV"
+                    : profissao === "meteorol"
+                    ? "CREA"
+                    : profissao === "museo"
+                    ? "COREM"
+                    : profissao === "musico"
+                    ? "OMB"
+                    : profissao === "nutri"
+                    ? "CRN"
+                    : profissao === "psi"
+                    ? "CRP"
+                    : profissao === "quim"
+                    ? "CRQ"
+                    : profissao === "rel_pub"
+                    ? "CONRERP"
+                    : profissao === "rep_comercial"
+                    ? "CORE"
+                    : profissao === "rad"
+                    ? "CRTR"
+                    : profissao === "terap_ocup"
+                    ? "CREFITO"
+                    : ""
+                }
+              />
+            </div>
+          ) : null}
+        </form>
         <NavLink to="/">
           <Button
             variant="contained"

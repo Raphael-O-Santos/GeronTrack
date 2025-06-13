@@ -73,7 +73,7 @@ ol {
   display: grid;
   grid-template-areas:
     "titulo titulo titulo titulo"
-    "termos pessoa pessoa pessoa"
+    "termos identificacao identificacao identificacao"
     "termos empresa empresa empresa"
     "botoes botoes botoes botoes";
   width: 90vw;
@@ -85,6 +85,23 @@ ol {
   background-color: #fff;
 }
 
-.pessoa form {
-  grid-area: pessoa;
+.identificacao {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+}
+
+.identificacao h3 {
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+.identificacao input[type="text"],
+input[type="email"] {
+  width: 14em;
+  font-size: 1em;
+  padding: 4px;
+  border-radius: 0.3em;
 }
