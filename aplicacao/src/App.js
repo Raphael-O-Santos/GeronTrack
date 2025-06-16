@@ -3,18 +3,18 @@ import "./App.css";
 // Navigation
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Pages
-import Welcome from "./pages/Welcome";
+import Login from "./pages/Login";
 import Recovery from "./pages/Recovery";
-import Terms from "./pages/Terms";
+import NewUser from "./pages/NewUser";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Login />} />
           <Route path="/Recovery" element={<Recovery />} />
-          <Route path="/Terms" element={<Terms />} />
+          <Route path="/NewUser" element={<NewUser />} />
         </Routes>
       </BrowserRouter>
     </div>

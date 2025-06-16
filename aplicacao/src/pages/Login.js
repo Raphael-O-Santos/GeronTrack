@@ -1,5 +1,5 @@
 // Styles
-import styles from "./Welcome.module.css";
+import styles from "./Login.module.css";
 // MUI components
 import Button from "@mui/material/Button";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
@@ -8,7 +8,8 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const Welcome = () => {
+const Login = () => {
+  // Password privacy
   const [visible, setVisible] = useState(false);
   return (
     <div className={styles.page}>
@@ -51,10 +52,10 @@ const Welcome = () => {
           <p>OU</p>
           <span />
         </div>
-        <NavLink to="/Terms">Criar conta</NavLink>
+        <NavLink to="/NewUser">Criar conta</NavLink>
       </div>
     </div>
   );
 };
 
-export default Welcome;
+export default Login;

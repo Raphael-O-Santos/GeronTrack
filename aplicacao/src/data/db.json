@@ -1,0 +1,305 @@
+{
+  "termos": [
+    { "id": 1, "valor": "&top&SOBRE O SISTEMA:" },
+    {
+      "id": 2,
+      "valor": "• Esta aplicação é voltada ao ambiente de <b>Instituições de Longa Permanência para Idosos (ILPI)</b> sediadas em território nacional."
+    },
+    {
+      "id": 3,
+      "valor": "• Em atenção ao cumprimento das normas estabelecidas na Resolução de Diretoria Colegiada - <b>RDC nº 502</b>, de 27 de maio de 2021, que dispõe sobre o <b>funcionamento</b> das ILPIs de caráter <b>residencial</b>, trazemos apoio às seguintes demandas:"
+    },
+    {
+      "id": 4,
+      "valor": "&sub&a) Auto-acompanhamento do cumprimento das <b>premissas mínimas</b> que a ILPI deve atender (Art. 6º)."
+    },
+    {
+      "id": 5,
+      "valor": "&sub&b) Suporte à organização das <b>imunizações periódicas</b> previstas no Plano Nacional de Imunização (PNI) do Ministério da Saúde (Art. 39)."
+    },
+    {
+      "id": 6,
+      "valor": "&sub&c) Suporte ao <b>controle de medicamentos</b> administrados aos residentes (Art. 40)."
+    },
+    {
+      "id": 7,
+      "valor": "&sub&d) Organização dos <b>planejamentos de rotinas e procedimentos</b> de cuidado ao idoso (Art. 41)"
+    },
+    {
+      "id": 8,
+      "valor": "&sub&e) Suporte ao <b>registro de intercorrências médicas</b> (Arts. 42, 54 e 55)."
+    },
+    {
+      "id": 9,
+      "valor": "&sub&f) Suporte ao <b>controle de produtos</b> utilizados no processamento de roupas (Art. 50)."
+    },
+    {
+      "id": 10,
+      "valor": "&sub&g) Suporte ao lenvantamento periódico de <b>indicadores</b> (Art. 60 e anexo da RDC)."
+    },
+    { "id": 11, "valor": "&top&USUÁRIOS:" },
+    {
+      "id": 12,
+      "valor": "• A criação de usuários nesta página é indicada exclusivamente para <b>proprietários, gestores e responsáveis técnicos</b> (RT) de ILPI."
+    },
+    {
+      "id": 13,
+      "valor": "• Demais membros da instituição devem ser cadastrados <b>pelo usuário principal</b> na área interna da aplicação."
+    },
+    {
+      "id": 14,
+      "valor": "• Cada <b>usuário colaborador</b> terá acesso à informações <b>limitadas</b> ao seu campo de atuação, colaborando com o levantamento geral, sob <b>controle do usuário principal</b>."
+    },
+    {
+      "id": 15,
+      "valor": "• A <b>comunicação entre equipes</b> também é definida pelo usuário principal."
+    }
+  ],
+  "funcao_m": [
+    { "id": 1, "value": "dono", "tipo": "Proprietário" },
+    { "id": 2, "value": "gestor", "tipo": "Gestor" },
+    { "id": 3, "value": "rt", "tipo": "Responsável Técnico (RT)" }
+  ],
+  "funcao_f": [
+    { "id": 1, "value": "dono", "tipo": "Proprietária" },
+    { "id": 2, "value": "gestor", "tipo": "Gestora" },
+    { "id": 3, "value": "rt", "tipo": "Responsável Técnica (RT)" }
+  ],
+  "profissao_m": [
+    { "id": 1, "value": "admin", "tipo": "Administrador" },
+    { "id": 2, "value": "adv", "tipo": "Advogado" },
+    { "id": 3, "value": "agro", "tipo": "Agrônomo" },
+    { "id": 4, "value": "arq", "tipo": "Arquiteto e Urbanista" },
+    { "id": 5, "value": "assist_social", "tipo": "Assistente Social" },
+    { "id": 6, "value": "biblio", "tipo": "Bibliotecário" },
+    { "id": 7, "value": "bio", "tipo": "Biólogo" },
+    { "id": 8, "value": "biom", "tipo": "Biomédico" },
+    { "id": 9, "value": "contador", "tipo": "Contador" },
+    { "id": 10, "value": "corretor", "tipo": "Corretor de Imóveis" },
+    { "id": 11, "value": "dent", "tipo": "Dentista" },
+    { "id": 12, "value": "econ", "tipo": "Economista" },
+    { "id": 13, "value": "edfis", "tipo": "Educador Físico" },
+    { "id": 14, "value": "enf", "tipo": "Enfermeiro" },
+    { "id": 15, "value": "eng", "tipo": "Engenheiro" },
+    { "id": 16, "value": "estat", "tipo": "Estatístico" },
+    { "id": 17, "value": "farm", "tipo": "Farmacêutico" },
+    { "id": 18, "value": "fisio", "tipo": "Fisioterapeuta" },
+    { "id": 19, "value": "fono", "tipo": "Fonoaudiólogo" },
+    { "id": 20, "value": "geo", "tipo": "Geógrafo" },
+    { "id": 21, "value": "geologo", "tipo": "Geólogo" },
+    { "id": 22, "value": "med", "tipo": "Médico" },
+    { "id": 23, "value": "vet", "tipo": "Médico Veterinário" },
+    { "id": 24, "value": "meteorol", "tipo": "Meteorologista" },
+    { "id": 25, "value": "museo", "tipo": "Museólogo" },
+    { "id": 26, "value": "musico", "tipo": "Músico" },
+    { "id": 27, "value": "nutri", "tipo": "Nutricionista" },
+    { "id": 28, "value": "psi", "tipo": "Psicólogo" },
+    { "id": 29, "value": "quim", "tipo": "Químico" },
+    { "id": 30, "value": "rel_pub", "tipo": "Relações Públicas" },
+    { "id": 31, "value": "rep_comercial", "tipo": "Representante Comercial" },
+    { "id": 32, "value": "rad", "tipo": "Tecnólogo em Radiologia" },
+    { "id": 33, "value": "terap_ocup", "tipo": "Terapeuta Ocupacional" }
+  ],
+  "profissao_f": [
+    { "id": 1, "value": "admin", "tipo": "Administradora" },
+    { "id": 2, "value": "adv", "tipo": "Advogada" },
+    { "id": 3, "value": "agro", "tipo": "Agrônoma" },
+    { "id": 4, "value": "arq", "tipo": "Arquiteta e Urbanista" },
+    { "id": 5, "value": "assist_social", "tipo": "Assistente Social" },
+    { "id": 6, "value": "biblio", "tipo": "Bibliotecária" },
+    { "id": 7, "value": "bio", "tipo": "Bióloga" },
+    { "id": 8, "value": "biom", "tipo": "Biomédica" },
+    { "id": 9, "value": "contador", "tipo": "Contadora" },
+    { "id": 10, "value": "corretor", "tipo": "Corretora de Imóveis" },
+    { "id": 11, "value": "dent", "tipo": "Dentista" },
+    { "id": 12, "value": "econ", "tipo": "Economista" },
+    { "id": 13, "value": "edfis", "tipo": "Educadora Física" },
+    { "id": 14, "value": "enf", "tipo": "Enfermeira" },
+    { "id": 15, "value": "eng", "tipo": "Engenheira" },
+    { "id": 16, "value": "estat", "tipo": "Estatística" },
+    { "id": 17, "value": "farm", "tipo": "Farmacêutica" },
+    { "id": 18, "value": "fisio", "tipo": "Fisioterapeuta" },
+    { "id": 19, "value": "fono", "tipo": "Fonoaudióloga" },
+    { "id": 20, "value": "geo", "tipo": "Geógrafa" },
+    { "id": 21, "value": "geologo", "tipo": "Geóloga" },
+    { "id": 22, "value": "med", "tipo": "Médica" },
+    { "id": 23, "value": "vet", "tipo": "Médica Veterinária" },
+    { "id": 24, "value": "meteorol", "tipo": "Meteorologista" },
+    { "id": 25, "value": "museo", "tipo": "Museóloga" },
+    { "id": 26, "value": "musico", "tipo": "Música" },
+    { "id": 27, "value": "nutri", "tipo": "Nutricionista" },
+    { "id": 28, "value": "psi", "tipo": "Psicóloga" },
+    { "id": 29, "value": "quim", "tipo": "Química" },
+    { "id": 30, "value": "rel_pub", "tipo": "Relações Públicas" },
+    { "id": 31, "value": "rep_comercial", "tipo": "Representante Comercial" },
+    { "id": 32, "value": "rad", "tipo": "Tecnóloga em Radiologia" },
+    { "id": 33, "value": "terap_ocup", "tipo": "Terapeuta Ocupacional" }
+  ],
+  "conselho": [
+    {
+      "id": 1,
+      "profissao": "admin",
+      "conselho": "Conselho Regional de Administração (CRA)"
+    },
+    {
+      "id": 2,
+      "profissao": "adv",
+      "conselho": "Ordem dos Advogados do Brasil (OAB)"
+    },
+    {
+      "id": 3,
+      "profissao": "agro",
+      "conselho": "Conselho Regional de Engenharia e Agronomia (CREA)"
+    },
+    {
+      "id": 4,
+      "profissao": "arq",
+      "conselho": "Conselho de Arquitetura e Urbanismo (CAU)"
+    },
+    {
+      "id": 5,
+      "profissao": "assist_social",
+      "conselho": "Conselho Regional de Serviço Social (CRESS)"
+    },
+    {
+      "id": 6,
+      "profissao": "biblio",
+      "conselho": "Conselho Regional de Biblioteconomia (CRB)"
+    },
+    {
+      "id": 7,
+      "profissao": "bio",
+      "conselho": "Conselho Regional de Biologia (CRBio)"
+    },
+    {
+      "id": 8,
+      "profissao": "biom",
+      "conselho": "Conselho Regional de Biomedicina (CRBM)"
+    },
+    {
+      "id": 9,
+      "profissao": "contador",
+      "conselho": "Conselho Regional de Contabilidade (CRC)"
+    },
+    {
+      "id": 10,
+      "profissao": "corretor",
+      "conselho": "Conselho Regional de Corretores de Imóveis (CRECI)"
+    },
+    {
+      "id": 11,
+      "profissao": "dent",
+      "conselho": "Conselho Regional de Odontologia (CRO)"
+    },
+    {
+      "id": 12,
+      "profissao": "econ",
+      "conselho": "Conselho Regional de Economia (Corecon)"
+    },
+    {
+      "id": 13,
+      "profissao": "edfis",
+      "conselho": "Conselho Regional de Educação Física (CREF)"
+    },
+    {
+      "id": 14,
+      "profissao": "enf",
+      "conselho": "Conselho Regional de Enfermagem (Coren)"
+    },
+    {
+      "id": 15,
+      "profissao": "eng",
+      "conselho": "Conselho Regional de Engenharia e Agronomia (CREA)"
+    },
+    {
+      "id": 16,
+      "profissao": "estat",
+      "conselho": "Conselho Regional de Estatística (CONRE)"
+    },
+    {
+      "id": 17,
+      "profissao": "farm",
+      "conselho": "Conselho Regional de Farmácia (CRF)"
+    },
+    {
+      "id": 18,
+      "profissao": "fisio",
+      "conselho": "Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO)"
+    },
+    {
+      "id": 19,
+      "profissao": "fono",
+      "conselho": "Conselho Regional de Fonoaudiologia (CREFONO)"
+    },
+    {
+      "id": 20,
+      "profissao": "geo",
+      "conselho": "Conselho Regional de Engenharia e Agronomia (CREA)"
+    },
+    {
+      "id": 21,
+      "profissao": "geologo",
+      "conselho": "Conselho Regional de Engenharia e Agronomia (CREA)"
+    },
+    {
+      "id": 22,
+      "profissao": "med",
+      "conselho": "Conselho Regional de Medicina (CRM)"
+    },
+    {
+      "id": 23,
+      "profissao": "vet",
+      "conselho": "Conselho Regional de Medicina Veterinária (CRMV)"
+    },
+    {
+      "id": 24,
+      "profissao": "meteorol",
+      "conselho": "Conselho Regional de Engenharia e Agronomia (CREA)"
+    },
+    {
+      "id": 25,
+      "profissao": "museo",
+      "conselho": "Conselho Regional de Museologia (COREM)"
+    },
+    {
+      "id": 26,
+      "profissao": "musico",
+      "conselho": "Ordem dos Músicos do Brasil (OMB)"
+    },
+    {
+      "id": 27,
+      "profissao": "nutri",
+      "conselho": "Conselho Regional de Nutricionistas (CRN)"
+    },
+    {
+      "id": 28,
+      "profissao": "psi",
+      "conselho": "Conselho Regional de Psicologia (CRP)"
+    },
+    {
+      "id": 29,
+      "profissao": "quim",
+      "conselho": "Conselho Regional de Química (CRQ)"
+    },
+    {
+      "id": 30,
+      "profissao": "rel_pub",
+      "conselho": "Conselho Regional de Profissionais de Relações Públicas (CONRERP)"
+    },
+    {
+      "id": 31,
+      "profissao": "rep_comercial",
+      "conselho": "Conselho Regional dos Representantes Comerciais (Core)"
+    },
+    {
+      "id": 32,
+      "profissao": "rad",
+      "conselho": "Conselho Regional de Técnicos em Radiologia (CRTR)"
+    },
+    {
+      "id": 33,
+      "profissao": "terap_ocup",
+      "conselho": "Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO)"
+    }
+  ]
+}
