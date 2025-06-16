@@ -3,7 +3,7 @@ import styles from "./NewUser.module.css";
 // MUI components
 import Button from "@mui/material/Button";
 // Navigation
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 // Dados
 import dados from "../data/db.json";
@@ -11,7 +11,10 @@ import dados from "../data/db.json";
 const NewUser = () => {
   const [genero, setGenero] = useState("m");
   const [profissao, setProfissao] = useState(null);
-  const [aceitoRegProf, setAceitoRegProf] = useState(null);
+  const [aceitoRegProf, setAceitoRegProf] = useState(false);
+  const [aceitoTermos, setAceitoTermos] = useState(false);
+  const [regPersonalizado, setRegPersonalizado] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className={styles.background}>
@@ -42,15 +45,19 @@ const NewUser = () => {
             )}
           </ul>
           <label>
-            <input type="checkbox" name="aceito" />
+            <input
+              type="checkbox"
+              name="aceito"
+              onChange={(e) => setAceitoTermos(e.target.checked)}
+            />
             <span style={{ marginLeft: "0.5em" }}>
               Li, concordo e aceito os termos acima.
             </span>
           </label>
         </div>
         <form>
-          <div className={styles.blocoCadastro}>
-            <h3>IDENTIFICAÇÃO</h3>
+          <div className={styles.blocoCadastro} style={{ gridRow: 1 }}>
+            <h3 style={{ color: "#000" }}>IDENTIFICAÇÃO</h3>
             <label
               style={{
                 gridColumn: "span 2",
@@ -85,12 +92,16 @@ const NewUser = () => {
               <span>Gênero:</span>
               <input
                 type="radio"
-                name="opcao"
+                name="genero"
                 onClick={() => setGenero("m")}
                 defaultChecked
               />
               <span style={{ fontWeight: "normal" }}>M</span>
-              <input type="radio" name="opcao" onClick={() => setGenero("f")} />
+              <input
+                type="radio"
+                name="genero"
+                onClick={() => setGenero("f")}
+              />
               <span style={{ fontWeight: "normal" }}>F</span>
             </label>
             <label
@@ -115,8 +126,8 @@ const NewUser = () => {
               </select>
             </label>
           </div>
-          <div className={styles.blocoCadastro}>
-            <h3>PROFISSIONAL</h3>
+          <div className={styles.blocoCadastro} style={{ gridRow: 2 }}>
+            <h3 style={{ color: "#000" }}>PROFISSIONAL</h3>
             <label
               style={{
                 gridColumn: "span 2",
@@ -148,15 +159,27 @@ const NewUser = () => {
               </select>
             </label>
             {profissao === "outra" ? (
-              <input
-                type="text"
-                placeholder="Informe sua profissão"
-                style={{
-                  gridColumn: "span 2",
-                  width: "50%",
-                  justifySelf: "center",
-                }}
-              />
+              <div
+                style={{ gridColumn: "span 2", display: "flex", gap: "1em" }}
+              >
+                <input type="text" placeholder="Informe sua profissão" />
+                <label style={{ display: "flex", alignItems: "center" }}>
+                  <span style={{ whiteSpace: "nowrap" }}>Possui registro?</span>
+                  <input
+                    type="radio"
+                    name="registro"
+                    defaultChecked
+                    onClick={() => setRegPersonalizado(false)}
+                  />
+                  <span style={{ fontWeight: "normal" }}>Não</span>
+                  <input
+                    type="radio"
+                    name="registro"
+                    onClick={() => setRegPersonalizado(true)}
+                  />
+                  <span style={{ fontWeight: "normal" }}>Sim</span>
+                </label>
+              </div>
             ) : null}
             {!["outra", "none", null].includes(profissao) ? (
               <div
@@ -194,6 +217,51 @@ const NewUser = () => {
                 />
               </div>
             ) : null}
+            {profissao === "outra" && regPersonalizado === true ? (
+              <input
+                type="text"
+                placeholder="Registro profissional"
+                style={{
+                  width: "50%",
+                  justifySelf: "center",
+                  gridColumn: "span 2",
+                }}
+              />
+            ) : null}
+          </div>
+
+          <div className={styles.blocoCadastro} style={{ gridRow: 3 }}>
+            <h3 style={{ color: "#000" }}>AUTENTICAÇÃO</h3>
+            <label
+              style={{
+                gridColumn: "span 2",
+                display: "flex",
+                gap: "0.5em",
+                alignItems: "center",
+              }}
+            >
+              <span>Senha:</span>
+              <input
+                type="password"
+                name="senha"
+                placeholder="Digite 8 caracteres ao seu critério"
+              />
+            </label>
+            <label
+              style={{
+                gridColumn: "span 2",
+                display: "flex",
+                gap: "0.5em",
+                alignItems: "center",
+              }}
+            >
+              <span>Repita:</span>
+              <input
+                type="password"
+                name="senha2"
+                placeholder="Digite a senha novamente"
+              />
+            </label>
           </div>
         </form>
         <div className={styles.botoes}>
@@ -207,9 +275,13 @@ const NewUser = () => {
               Voltar
             </Button>
           </NavLink>
-          <NavLink to="/">
-            <Button variant="contained">Cadastrar</Button>
-          </NavLink>
+          <Button
+            variant="contained"
+            disabled={aceitoTermos === false ? true : false}
+            onClick={() => navigate("/")}
+          >
+            Cadastrar
+          </Button>
         </div>
       </div>
     </div>

@@ -63,7 +63,9 @@ h3 {
 .blocoPrincipal form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 1em;
+  align-content: start;
 }
 
 .blocoCadastro {
@@ -74,12 +76,13 @@ h3 {
   align-items: center;
   padding: 1em;
   font-weight: bold;
+  color: #444;
   border: 3px solid #e0e0e0;
   border-radius: 1em;
 }
 
 .blocoPrincipal input[type="text"],
-input[type="email"], select {
+input[type="email"], input[type="password"], select {
   font-size: 1em;
   width: 100%;
   padding: 0.2em;
