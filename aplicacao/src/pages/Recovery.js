@@ -1,7 +1,5 @@
 // Styles
 import styles from "./Recovery.module.css";
-// MUI components
-import Button from "@mui/material/Button";
 // Navigation
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -9,73 +7,70 @@ import { useState } from "react";
 const Recovery = () => {
   const [showMessage, setShowMessage] = useState("none");
   const [message, setMessage] = useState("");
-  const [sendButton, setSendButton] = useState("Enviar");
+  const [sendButton, setSendButton] = useState("enviar");
   const [disableEditEmail, setDisableEditEmail] = useState(false);
   const [email, setEmail] = useState(null);
+  const emailValido = /.+@.+\.(com|br)/.test(email);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (sendButton === "Enviar") {
+    if (sendButton === "enviar") {
       setDisableEditEmail(true);
       setShowMessage("");
-      setSendButton("Reenviar");
+      setSendButton("reenviar");
     } else {
       setMessage("E-mail de recuperação reenviado.");
     }
   };
 
   return (
-    <div className={styles.page}>
-      <div className={styles.recovery}>
-        <h1>
-          Recuperação
-          <br />
-          de Acesso
-        </h1>
+    <div>
+      <div className="blocoSombra">
+        <h1 style={{ textAlign: "center" }}>Recuperação de Acesso</h1>
         <form onSubmit={handleSubmit} id="form">
-          <label className={styles.email} htmlFor="email">
-            Informe o e-mail da conta:
+          <label>
+            <input
+              type="email"
+              name="email"
+              style={{ alignSelf: "center", width: "16em", marginTop: "0.8em" }}
+              placeholder="Digite o seu e-mail"
+              disabled={disableEditEmail}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Digite o seu e-mail"
-            disabled={disableEditEmail}
-            onChange={(e) => setEmail(e.target.value)}
-          />
         </form>
         {message === "" ? (
-          <p style={{ display: `${showMessage}` }}>
+          <p
+            style={{
+              display: `${showMessage}`,
+              textAlign: "justify",
+              wordWrap: "break-word",
+              hyphens: "auto",
+              maxWidth: "22em",
+            }}
+          >
             Caso o e-mail informado esteja em nossa base de dados, enviaremos um
-            link para a recuperação de sua senha.
-            <br />
-            Verifique também a caixa de Spam e Lixeira.
+            link para a recuperação de sua senha. Verifique também a caixa de
+            Spam e Lixeira.
           </p>
         ) : (
           <p>{message}</p>
         )}
         <div className={styles.botoes}>
           <NavLink to="/">
-            <Button
-              variant="contained"
-              sx={{
-                marginTop: "1em",
-                marginBottom: "1em",
-                backgroundColor: "#999",
-              }}
-            >
-              Voltar
-            </Button>
+            <button style={{ backgroundColor: "#999" }}>voltar</button>
           </NavLink>
-          <Button
-            variant="contained"
-            sx={{ marginTop: "1em", marginBottom: "1em" }}
+          <button
             type="submit"
             form="form"
-            disabled={/.+@.+\.(com|br)/.test(email) ? false : true}
+            style={
+              emailValido ? {} : { backgroundColor: "#ddd", cursor: "auto" }
+            }
+            disabled={emailValido ? false : true}
+            onClick={handleSubmit}
           >
             {sendButton}
-          </Button>
+          </button>
         </div>
       </div>
     </div>

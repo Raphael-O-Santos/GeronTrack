@@ -1,7 +1,6 @@
 // Styles
 import styles from "./Login.module.css";
 // MUI components
-import Button from "@mui/material/Button";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 // Navigation
@@ -9,43 +8,49 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Login = () => {
-  // Password privacy
+  const iconStyle = { cursor: "pointer" };
   const [visible, setVisible] = useState(false);
   return (
-    <div className={styles.page}>
-      <div className={styles.login}>
-        <h1>GeronTrack</h1>
-        <form>
-          <label className={styles.email} htmlFor="email">
-            E-Mail:
+    <div>
+      <div className="blocoSombra">
+        <h1 className={styles.logo}>GeronTrack</h1>
+        <form className={styles.credenciais}>
+          <label>
+            <span>E-Mail:</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Digite o seu e-mail"
+            />
           </label>
-          <input type="email" name="email" placeholder="Digite o seu e-mail" />
-          <label className={styles.senha} htmlFor="senha">
-            Senha:
+          <label>
+            <span>Senha:</span>
+            <div style={{ display: "flex" }}>
+              <input
+                type={visible ? "text" : "password"}
+                name="senha"
+                maxLength={10}
+                placeholder="Digite a senha"
+              />
+              {visible ? (
+                <VisibilityIcon
+                  style={iconStyle}
+                  onClick={() => setVisible((prev) => !prev)}
+                />
+              ) : (
+                <VisibilityOffIcon
+                  style={iconStyle}
+                  onClick={() => setVisible((prev) => !prev)}
+                />
+              )}
+            </div>
           </label>
-          <input
-            type={!visible ? "password" : "text"}
-            name="senha"
-            placeholder="Digite a senha"
-          />
-          <div className={styles.visibility}>
-            {!visible ? (
-              <VisibilityOffIcon onClick={() => setVisible((prev) => !prev)} />
-            ) : (
-              <VisibilityIcon onClick={() => setVisible((prev) => !prev)} />
-            )}
+          <div>
+            <input type="checkbox" name="lembrar" />
+            <span style={{ fontWeight: "normal" }}>Lembrar</span>
           </div>
+          <button>entrar</button>
         </form>
-        <label className={styles.lembrar} htmlFor="lembrar">
-          <input type="checkbox" name="lembrar" />
-          Lembrar
-        </label>
-        <Button
-          variant="contained"
-          sx={{ marginTop: "1em", marginBottom: "1em" }}
-        >
-          Entrar
-        </Button>
         <NavLink to="/Recovery">Esqueci a senha</NavLink>
         <div className={styles.ou}>
           <span />
