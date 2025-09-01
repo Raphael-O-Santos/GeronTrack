@@ -1,26 +1,37 @@
-import PersonIcon from "@mui/icons-material/Person";
+// Icons
+import Face4Icon from "@mui/icons-material/Face4";
 import GroupsIcon from "@mui/icons-material/Groups";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+// Navigation
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+// Styles
+import styles from "./Bottom.module.css";
 
 const Bottom = () => {
-  const styleIcon = { fontSize: "2.5em", color: "#0077B6" };
+  const [pagina] = useState(window.location.pathname);
+  const navigate = useNavigate();
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "100%",
-        justifyContent: "space-between",
-        alignItems: "center",
-        backgroundColor: "#CAF0F8",
-        padding: "1em 1em 0 1em",
-        borderRadius: "0 0 1em 1em",
-      }}
-    >
-      <PersonIcon sx={styleIcon} />
-      <GroupsIcon sx={styleIcon} />
-      <AccountCircleIcon sx={styleIcon} />
-      <NotificationsIcon sx={styleIcon} />
+    <div className={styles.bottom}>
+      <Face4Icon
+        className={pagina === "/Residentes" ? styles.clicked : styles.unclicked}
+        onClick={() => navigate("/Residentes")}
+      />
+      <GroupsIcon
+        className={
+          pagina === "/Profissionais" ? styles.clicked : styles.unclicked
+        }
+        onClick={() => navigate("/Profissionais")}
+      />
+      <PersonAddIcon
+        className={pagina === "/Usuarios" ? styles.clicked : styles.unclicked}
+        onClick={() => navigate("/Usuarios")}
+      />
+      <NotificationsIcon
+        className={pagina === "/Alertas" ? styles.clicked : styles.unclicked}
+        onClick={() => navigate("/Alertas")}
+      />
     </div>
   );
 };

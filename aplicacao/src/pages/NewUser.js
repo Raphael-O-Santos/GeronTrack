@@ -555,7 +555,7 @@ const NewUser = () => {
               : { backgroundColor: "#ddd", cursor: "auto" }
           }
           disabled={aceitoTermos === true ? false : true}
-          onClick={() => navigate("/Home")}
+          onClick={() => navigate("/Residentes")}
         >
           cadastrar
         </button>

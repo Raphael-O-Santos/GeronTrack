@@ -8,8 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-image: radial-gradient(#00b4d8, #03045e);
 }
 
@@ -62,24 +62,94 @@ button:hover {
   background-color: #1565c0;
   cursor: pointer;
 }
-
-.blocoSombra {
+/* Componentes principais */
+.blocoPrincipal {
   display: flex;
   flex-direction: column;
-  max-width: 96vw;
-  max-height: 92vh;
-  align-items: center;
-  row-gap: 0.5em;
-  padding: 1em;
+  background-color: #fff;
   box-shadow: 0.3em 0.5em 1em #000;
   border-radius: 1em;
-  background-color: #fff;
 }
 
+.listaCards {
+  padding: 0 1em 0.2em;
+  overflow-y: auto;
+}
+
+.card {
+  display: flex;
+  gap: 1em;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  box-shadow: 0.1em 0.1em 0.2em #999;
+}
+
+.card:hover {
+  color: #fff;
+  background-color: #0077b6;
+  cursor: pointer;
+}
+
+.letra {
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  background-color: #0077b6;
+  font-size: 2.5em;
+  padding: 0 0.3em;
+  align-self: center;
+  border-radius: 100%;
+  font-family: monospace;
+}
+
+/* Smartphones */
 @media only screen and (max-width: 600px) {
-  .blocoSombra {
-    max-width: 88vw;
-    max-height: 94vh;
-    overflow-y: auto;
+  .blocoPrincipal {
+    width: 95vw;
+    height: 98vh;
+  }
+
+  .listaCards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) {
+  .blocoPrincipal {
+    width: 98vw;
+    height: 98vh;
+  }
+
+  .listaCards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+  }
+}
+
+/* iPad Pro */
+@media only screen and (min-width: 1024px) {
+  .listaCards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+  }
+}
+
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .blocoPrincipal {
+    width: 98vw;
+    height: 95vh;
+  }
+
+  .listaCards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
   }
 }
