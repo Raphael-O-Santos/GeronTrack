@@ -15,10 +15,10 @@
 * CI4 - As TICs citadas no artigo favorecem a **otimização de processos de trabalho** ou **cuidados em saúde**?
 
 ## Critérios de exclusão (CE):
-* CE1 - O artigo **não analisa** o uso de TICs não baseados em IA.
-* CE2 - O artigo **não cita** TICs em estudo ou utilização nas ILPIs.
-* CE3 - As TICs citadas no artigo **não têm foco** na parte de software.
-* CE4 - As TICs citadas no artigo **não favorecem** a otimização de processos de trabalho ou cuidados em saúde.
+* CE1 - O artigo **não analisa** o uso de tecnologias de informação e comunicação **(TICs)**.
+* CE2 - O artigo **não cita** TICs **em estudo ou utilização** nas Instituições de Longa Permanência para Idosos (**ILPI**).
+* CE3 - As TICs citadas no artigo **não têm foco** em **software**.
+* CE4 - As TICs citadas no artigo **não favorecem** a **otimização de processos de trabalho** ou **cuidados em saúde**.
 
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO | SELEÇÃO | ANÁLISE | JUSTIFICATIVA |
