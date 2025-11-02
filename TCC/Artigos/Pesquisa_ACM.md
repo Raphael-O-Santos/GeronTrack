@@ -23,4 +23,4 @@
 ## Resultados:
 | Nº | ANO | AUTORES | TÍTULO | SELEÇÃO | ANÁLISE | JUSTIFICATIVA |
 | -- | --- | ------- | ------ | ------- | ------- | ------------- |
-| **1** | **2024** | **M. Kelly, Ryan;<br>Xing, Yushan;<br>Baker, Steven;<br>Waycott, Jenny** | [**"More Than Just Holding the iPad": Family Members' Perspectives on the Work of Video Calling in Aged Care**](https://dl.acm.org/doi/10.1145/3687007) | **Aceito** | **Atende a todos os CI** | **Considerando abstract** |
+| **1** | **2024** | **M. Kelly, Ryan;<br>Xing, Yushan;<br>Baker, Steven;<br>Waycott, Jenny** | [**"More Than Just Holding the iPad": Family Members' Perspectives on the Work of Video Calling in Aged Care**](https://dl.acm.org/doi/10.1145/3687007) | **Aceito** | **Atende a todos os CI** | **Considerando título** |
